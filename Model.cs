@@ -18,7 +18,8 @@ namespace DogBreedsApp
             var model = RetrainModel(mlContext, data);
 
             //Note: This path will change depening on your file location
-            string modelPath = Path.Combine("C:\\Users\\CY\\source\\repos\\DogBreedsFullStack\\DogBreedsFullStack\\", "DogBreeds.mlnet");
+            //Copy full path from the Dogbreeds.mlnet and paste it here 
+            string modelPath = Path.Combine("C:\\Users\\CY\\AIProject\\DogBreedsPredicter\\", "DogBreeds.mlnet");
 
             mlContext.Model.Save(model, data.Schema, modelPath);
         }
@@ -78,7 +79,8 @@ namespace DogBreedsApp
 
 
         //Note: This path will change depening on your file location
-        private static string MLNetModelPath = Path.Combine("C:\\Users\\CY\\source\\repos\\DogBreedsFullStack\\DogBreedsFullStack\\", "DogBreeds.mlnet");
+        //Copy full path from the Dogbreeds.mlnet and paste it here 
+        private static string MLNetModelPath = Path.Combine("C:\\Users\\CY\\AIProject\\DogBreedsPredicter\\", "DogBreeds.mlnet");
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 
