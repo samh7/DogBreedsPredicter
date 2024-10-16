@@ -19,7 +19,7 @@ namespace DogBreedsApp
 
             //Note: This path will change depening on your file location
             //Copy full path from the Dogbreeds.mlnet and paste it here 
-            string modelPath = Path.Combine("C:\\Users\\CY\\AIProject\\DogBreedsPredicter\\", "DogBreeds.mlnet");
+            string modelPath = Path.Combine("C:\\Users\XX\\AIProject\\DogBreedsPredicter\\", "DogBreeds.mlnet");
 
             mlContext.Model.Save(model, data.Schema, modelPath);
         }
