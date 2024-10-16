@@ -35,7 +35,7 @@ internal class Program
     static void Train()
     {
         // This path is Bound to change
-        var folderPath = "C:\\Users\\CY\\Documents\\archive (3) ihugoi\\test_test_model";
+        var folderPath = "C:\\Users\\__\\Documents\\archive (3) ihugoi\\test_test_model";
         var dogBreeds = new DogBreeds();
         dogBreeds.TrainModel(folderPath);
     }
